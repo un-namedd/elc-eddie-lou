@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- drinks.html — Drinks menu; external image URLs load if browser is online -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Drinks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar + main: shared layout; collapse uses CSS class on <body>, not on the sidebar alone -->
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a class="active" href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="topbar">
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button><!-- pairs with styles.css body.sidebar-collapsed -->
+                <div>
+                    <h1>Drinks Menu</h1>
+                    <p>Choose from refreshing drinks and beverages.</p>
+                </div>
+            </header>
+            <main>
+                <h2>Drink Items</h2>
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <img src="https://i0.wp.com/snax4schools.ca/wp-content/uploads/2023/09/Wholesome-farm-chocoalte-milk-.jpg?fit=547%2C543&ssl=1" alt="Chocolate Milk">
+                        <h4>Chocolate Milk</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://picklebarrelcatering.com/wp-content/uploads/2022/10/fairleeapplee_grande.webp" alt="Apple Juice">
+                        <h4>Apple Juice</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://kidspressmagazine.com/wp-content/uploads/2014/04/dreamstime_xl_12522351.jpg" alt="Bottled Water">
+                        <h4>Bottled Water</h4>
+                        <p class="item-meta">$1.25</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://digital.loblaws.ca/PCX/21645493_EA/en/1/21645493_en_front_v2_800.png" alt="Iced Tea">
+                        <h4>Iced Tea</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://i5.walmartimages.com/asr/0b6f66c8-752b-4c4c-be3a-273e4321eca4.5eb02963a8651ac1ab90e86553ac57d1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Sparkling Water">
+                        <h4>Sparkling Water</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1456fd025e7f2c84acb19125ce01fe700b125fae.jpg" alt="Diet Coca-Cola">
+                        <h4>Diet Coca-Cola</h4>
+                        <p class="item-meta">$1.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/40c8c76b0ba181074a3c68e712a435d90cc74d04.jpg" alt="Coca Cola">
+                        <h4>Coca Cola</h4>
+                        <p class="item-meta">$1.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://digital.loblaws.ca/PCX/21521772_EA/en/1/21521772_en_front_v1_800.png" alt="Gatorade">
+                        <h4>Gatorade</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://i5.walmartimages.com/asr/41815127-71ca-43fd-91e4-083554401587.8a19f6b7fcd2e3c21fc0677245fae9f6.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Lemonade">
+                        <h4>Lemonade</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script><!-- sidebar behaviour: see file header comments in script.js -->
+</body>
+</html>

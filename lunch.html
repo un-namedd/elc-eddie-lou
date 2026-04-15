@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- lunch.html — Lunch menu page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Lunch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a class="active" href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="topbar">
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button><!-- sidebar expand/collapse; script.js -->
+                <div>
+                    <h1>Lunch Menu</h1>
+                    <p>Enjoy a filling lunch during your day.</p>
+                </div>
+            </header>
+            <main>
+                <h2>Lunch Items</h2>
+                <div class="menu-grid"><!-- CSS Grid: auto-wrapping columns; see styles.css .menu-grid -->
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/870ea319d75f8d4d323dbb39c294156c3eaf719a.jpg" alt="Ceasar Salad">
+                        <h4>Ceasar Salad</h4>
+                        <p class="item-meta">$5.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://thestayathomechef.com/wp-content/uploads/2016/02/Buffalo2BChicken2BSubs2B1.jpg" alt="Chicken Sub">
+                        <h4>Chicken Sub</h4>
+                        <p class="item-meta">$5.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3dcce7038ee33d5101f4c63c44e42d7641280fd8.jpg" alt="Hot Dog">
+                        <h4>Hot Dog</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/eb3a119b057d8ccebd849ef0a33fae71f0bd84ea.jpg" alt="Poutine">
+                        <h4>Poutine</h4>
+                        <p class="item-meta">$4.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/63c80fa83621dfbf9809543371c79d77957b5e69.jpg" alt="Turkey Bacon wrap">
+                        <h4>Turkey Bacon wrap</h4>
+                        <p class="item-meta">$5.00</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script><!-- sidebar: adds/removes body class sidebar-collapsed -->
+</body>
+</html>

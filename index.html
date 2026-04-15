@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Home page (index.html) — Task 2 website; entry point linked from assignment -->
+<html lang="en">
+<head>
+    <!-- Character encoding and mobile-friendly scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Home</title>
+    <!-- One shared CSS file for all pages (colours, sidebar, grid, cards) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+      PAGE LAYOUT (.app)
+      - display:flex row → left: sidebar (navigation), right: .content (top bar + main + footer)
+      - Same structure on every page so navigation feels like one site, not separate files.
+    -->
+    <div class="app">
+        <!--
+          SIDEBAR (left column)
+          - <aside> = complementary navigation (semantic HTML5).
+          - Links go to each HTML file (breakfast.html, lunch.html, …).
+          - .active marks the current page (CSS highlights it).
+          - Each link has .icon (emoji) + .link-text (label). When body has class
+            "sidebar-collapsed", CSS hides .link-text so only icons show (YouTube-style).
+          - The hamburger that collapses the sidebar is NOT here — it is in .topbar inside .content.
+        -->
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a class="active" href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <!-- Main column: top bar (title + sidebar toggle), then page body -->
+        <div class="content">
+            <header class="topbar">
+                <!-- id="sidebarToggle" is required — script.js attaches the click listener here -->
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+                <div>
+                    <h1>ELC Eddie Lou's Cafeteria</h1>
+                    <p>Fresh meals and snacks for students and staff.</p>
+                </div>
+            </header>
+            <!-- Unique content for this page only -->
+            <main>
+                <h2>Welcome</h2>
+                <p>
+                    Welcome to the ELC Eddie Lou's Cafeteria website. Browse our breakfast, lunch,
+                    snack, and drink options, and check the daily specials offered through the week.
+                </p>
+                <div class="card">
+                    <h3>Service Focus</h3>
+                    <p>
+                        Our cafeteria is designed to provide high-quality, affordable options all day,
+                        with improved variety, nutrition, and accessibility for the school community.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Menu Navigation</h3>
+                    <p>
+                        Use the sidebar to move between pages. Click the toggle button in the top-left
+                        of the page to collapse or expand the sidebar.
+                    </p>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <!-- Loads sidebar toggle + localStorage persistence (must be at end of body) -->
+    <script src="script.js"></script>
+</body>
+</html>

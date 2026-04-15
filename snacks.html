@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- snacks.html — Snacks category from assignment pricelist -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Left nav: same links on every page; only one <a> has class="active" (this section) -->
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a class="active" href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="topbar">
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button><!-- id fixed: script.js querySelector -->
+                <div>
+                    <h1>Snacks Menu</h1>
+                    <p>Grab a quick snack any time.</p>
+                </div>
+            </header>
+            <main>
+                <h2>Snack Items</h2>
+                <div class="menu-grid">
+                    <!-- Each card: optional <img>, <h4> name, <p class="item-meta"> price -->
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c249013f1943c6da88214bff3fec4aceb004124c.jpg" alt="Kit Kat">
+                        <h4>Kit Kat</h4>
+                        <p class="item-meta">$1.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://m.media-amazon.com/images/I/81C566p519L.jpg" alt="Granola Bar">
+                        <h4>Granola Bar</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/eb419b3112263882f83e2d0314874626067246f0.jpg" alt="Lays">
+                        <h4>Lays</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://m.media-amazon.com/images/I/71HnPB90QjL._AC_UF894,1000_QL80_.jpg" alt="Doritos">
+                        <h4>Doritos</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ae398fb4f5c4c54b855f9f48abaf91d1b6befb79.jpg" alt="Yogurt Tubes">
+                        <h4>Yogurt Tubes</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://t4.ftcdn.net/jpg/04/20/79/53/240_F_420795346_icb2N28Er2kL4H6h65LE4C5X6fpFrMIP.jpg" alt="Popcorn">
+                        <h4>Popcorn</h4>
+                        <p class="item-meta">$1.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c9b685019dab974e3f1ca36efe791495a86f1b77.jpg" alt="Goldfish">
+                        <h4>Goldfish</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://t4.ftcdn.net/jpg/00/25/42/47/240_F_25424759_PEmiKZcjJchRdn1zhQUMrIejnBDBprb5.jpg" alt="Prezels">
+                        <h4>Prezels</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/82990f9857b07e8b16cae006057f6bfdcfe105a4.jpg" alt="Rice Krispies">
+                        <h4>Rice Krispies</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/89c1b03fae50324a09da61417869b47a01e873a4.jpg" alt="Fruit Cups">
+                        <h4>Fruit Cups</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script><!-- YouTube-style sidebar: narrow icons + saved preference -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- daily-specials.html — Weekly specials; .item-day = weekday label under price -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Daily Specials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a class="active" href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="topbar">
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button><!-- see script.js: toggle + localStorage -->
+                <div>
+                    <h1>Daily Specials</h1>
+                    <p>Weekly feature items available by day.</p>
+                </div>
+            </header>
+            <main>
+                <h2>Specials by Day</h2>
+                <div class="menu-grid">
+                    <!-- Price in .item-meta; weekday in .item-day (assignment lists specials by day) -->
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6933a4dfb9d8837ba4f90addbe0c665263bba4cd.jpg" alt="Chicken Burger">
+                        <h4>Chicken Burger</h4>
+                        <p class="item-meta">$5.00</p>
+                        <p class="item-day">Monday</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://www.andy-cooks.com/cdn/shop/articles/20230930000900-andy-20cooks-20-20tater-20tots.jpg?v=1696211632" alt="Potato Tots">
+                        <h4>Potato Tots</h4>
+                        <p class="item-meta">$3.50</p>
+                        <p class="item-day">Tuesday</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3beafe2823ca270d8611ba7fc511d4baa0b9e092.jpg" alt="Pumpkin Soup">
+                        <h4>Pumpkin Soup</h4>
+                        <p class="item-meta">$2.50</p>
+                        <p class="item-day">Tuesday</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://www.eatingonadime.com/wp-content/uploads/2019/04/walking-tacos-3.jpg" alt="Walking Taco">
+                        <h4>Walkin Taco</h4>
+                        <p class="item-meta">$5.00</p>
+                        <p class="item-day">Wednesday</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://www.certifiedirishangus.ie/wp-content/uploads/2019/11/TheUltimateBurgerwBacon_RecipePic.jpg" alt="Beef Burger">
+                        <h4>Beef Burger</h4>
+                        <p class="item-meta">$5.00</p>
+                        <p class="item-day">Thursday</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://i0.wp.com/blog.slicelife.com/wp-content/uploads/2019/07/pizza-facts.jpg?fit=1200%2C630&ssl=1" alt="Pizza">
+                        <h4>Pizza</h4>
+                        <p class="item-meta">$2.50</p>
+                        <p class="item-day">Friday</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script><!-- same script on every page so sidebar state carries across -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- breakfast.html — Breakfast menu page; prices/images match ICS4U assignment inventory -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELC Cafeteria - Breakfast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Layout: flex row — sidebar (nav) | content (topbar + main). Same on all menu pages. -->
+    <div class="app">
+        <!-- Sidebar: vertical nav; .active = this page. Collapse = body.sidebar-collapsed + script.js -->
+        <aside class="sidebar">
+            <div class="brand">ELC Cafeteria</div>
+            <nav>
+                <a href="index.html"><span class="icon">🏠</span><span class="link-text">Home</span></a>
+                <a class="active" href="breakfast.html"><span class="icon">🍳</span><span class="link-text">Breakfast</span></a>
+                <a href="lunch.html"><span class="icon">🍔</span><span class="link-text">Lunch</span></a>
+                <a href="snacks.html"><span class="icon">🍫</span><span class="link-text">Snacks</span></a>
+                <a href="drinks.html"><span class="icon">🥤</span><span class="link-text">Drinks</span></a>
+                <a href="daily-specials.html"><span class="icon">⭐</span><span class="link-text">Daily Specials</span></a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="topbar">
+                <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button><!-- toggles sidebar; see script.js -->
+                <div>
+                    <h1>Breakfast Menu</h1>
+                    <p>Start your day with our cafeteria breakfast options.</p>
+                </div>
+            </header>
+            <main>
+                <h2>Breakfast Items</h2>
+                <!-- Responsive grid of cards: .menu-item-card = image + name + .item-meta (price) -->
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <img src="https://glutenfreeonashoestring.com/wp-content/uploads/2023/08/Gluten-free-bagels-1.jpg" alt="Bagel">
+                        <h4>Bagel</h4>
+                        <p class="item-meta">$2.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://cakesbymk.com/wp-content/uploads/2025/03/Template-Size-for-Blog-38.jpg" alt="Muffin">
+                        <h4>Muffin</h4>
+                        <p class="item-meta">$2.50</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/gdn_hero_pdp_product_image/public/gdn_product/field_product_images/coffeemate-g3r0cgftsbdymnddd6np.jpg.webp?itok=o0zDAvlW" alt="Iced Coffee">
+                        <h4>Iced Coffee</h4>
+                        <p class="item-meta">$3.00</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://www.therealrecipes.com/wp-content/uploads/2023/08/avocado-blt-thumb.jpg" alt="BLT Sandwich">
+                        <h4>BLT Sandwich</h4>
+                        <p class="item-meta">$5.00</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                ICS4U Mid-Term Assessment Website
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script><!-- sidebar collapse + remember state in localStorage -->
+</body>
+</html>
